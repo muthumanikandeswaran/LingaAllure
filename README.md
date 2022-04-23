@@ -1,1 +1,2 @@
 # LingaAllure
+Runs pos application
