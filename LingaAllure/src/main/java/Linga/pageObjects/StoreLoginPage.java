@@ -12,21 +12,31 @@ public class StoreLoginPage {
 
 	public StoreLoginPage(AppiumDriver<AndroidElement> dr)  
 	{
-		
+
 		PageFactory.initElements(new AppiumFieldDecorator(dr), this);
 	}
-	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-0']")
-	public WebElement Email ;
-	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-1']")
+
+	//	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-0']")
+	//public WebElement Email ;
+
+
+
+	@AndroidFindBy(xpath="(//android.widget.EditText)[1]")
+	public WebElement EmailAddress ;
+
+	@AndroidFindBy(xpath="(//android.widget.EditText)[2]")
 	public WebElement Password ;
-	
+
+
+
+	//@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-1']")
+	//public WebElement Password ;
+
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Login']")
 	public WebElement LoginButton ;
-	
-	
-	
-	
-	
+
+
+
+
+
 }

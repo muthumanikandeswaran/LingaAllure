@@ -35,7 +35,7 @@ public class LingaBase {
 		
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
-
+		 caps.setCapability("udid", "ND4C504E2205D0164");
 		String device = (String) prop.get("device");
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		

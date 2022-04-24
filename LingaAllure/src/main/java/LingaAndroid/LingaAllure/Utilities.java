@@ -40,7 +40,7 @@ public class Utilities {
 	{
 
 		StoreLoginPage slp = new StoreLoginPage(dr);
-		slp.Email.sendKeys(email);
+		slp.EmailAddress.sendKeys(email);
 		slp.Password.sendKeys(password);
 		slp.LoginButton.click();
 
@@ -55,8 +55,8 @@ public class Utilities {
 		//Thread.sleep(2000);
 		pp.Three.click();
 		pp.Four.click();
-		pp.Backspace.click();
-		pp.Four.click();
+		//pp.Backspace.click();
+		//pp.Four.click();
 		pp.Login.click();
 		//Thread.sleep(4000);
 	}

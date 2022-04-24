@@ -17,6 +17,8 @@ public class FaceIdPage {
 	}
 	
 
+	
+	
 	@AndroidFindBy(xpath="//android.view.View[@text='FaceId']")
 	public WebElement FaceIdHeadingText ;
 	

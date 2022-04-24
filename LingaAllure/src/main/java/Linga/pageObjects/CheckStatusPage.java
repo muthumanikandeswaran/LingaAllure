@@ -18,6 +18,7 @@ public class CheckStatusPage {
 	}
 	
 	
+	
 
 	//@AndroidFindBy(xpath="(//android.view.View)[9]")
 	//public WebElement Options ;
