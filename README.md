@@ -1,2 +1,2 @@
 # LingaAllure
-Runs pos application
+Runs POS Application, robotically.
