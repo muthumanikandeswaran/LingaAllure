@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 import Linga.pageObjects.CheckStatusPage;
 import Linga.pageObjects.DashboardPage;
-import Linga.pageObjects.DigitalReceiptScreen;
+import Linga.pageObjects.DigitalReceiptScreenPage;
 import Linga.pageObjects.OperationPage;
 import Linga.pageObjects.OrderType;
 import io.appium.java_client.AppiumDriver;

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import Linga.pageObjects.CheckStatusPage;
 import Linga.pageObjects.DashboardPage;
-import Linga.pageObjects.DigitalReceiptScreen;
+import Linga.pageObjects.DigitalReceiptScreenPage;
 import Linga.pageObjects.OperationPage;
 import Linga.pageObjects.OrderType;
 import io.appium.java_client.AppiumDriver;
@@ -30,7 +30,7 @@ public class Qsr_AllureTest extends LingaBase {
 		AndroidDriver<AndroidElement> dr = capabilities("apprelease");
 
 		Utilities u = new Utilities(dr);
-		u.storeLogin("newland@mail.com","newland1");
+		u.storeLogin("shri1@mail.com","sri1234");
 
 		Thread.sleep(10000);
 
@@ -47,7 +47,7 @@ public class Qsr_AllureTest extends LingaBase {
 			dr.findElement(By.xpath("//*[@text='PEYNİRLİ SOMONLU SALATA 30,90TL']")).click();
 			DashboardPage dp = new DashboardPage(dr);
 			dp.Payment.click();
-			dp.CashPay.click();
+			dp.INRPay.click();
 			dp.Submit.click();
 			
 		}
@@ -66,7 +66,7 @@ public class Qsr_AllureTest extends LingaBase {
 			dr.findElement(By.xpath("//*[@text='PEYNİRLİ SOMONLU SALATA 30,90TL']")).click();
 			DashboardPage dp = new DashboardPage(dr);
 			dp.Payment.click();
-			dp.CashPay.click();
+			dp.INRPay.click();
 			dp.Submit.click();
 			
 		}
@@ -83,7 +83,7 @@ public class Qsr_AllureTest extends LingaBase {
 			dr.findElement(By.xpath("//*[@text='PEYNİRLİ SOMONLU SALATA 30,90TL']")).click();
 			DashboardPage dp = new DashboardPage(dr);
 			dp.Payment.click();
-			dp.CashPay.click();
+			dp.INRPay.click();
 			dp.Submit.click();
 			
 		}
