@@ -16,22 +16,26 @@ public class CustomerProfileScreen {
 		PageFactory.initElements(new AppiumFieldDecorator(dr), this);
 	}
 	
-
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Add New']")
-	public WebElement AddNew ;
 	
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Close']")
-	public WebElement Close ;
-	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Remove']")
-	public WebElement Remove ;
-	
-	@AndroidFindBy(xpath="(//android.view.View)[14]")        //    17  - add seat(+)        15 not works       22- expanded all - not works      14 finally - plain orderscreen
-	public WebElement CustomerNameDisplay ;
-	
-	@AndroidFindBy(xpath="(//android.widget.EditText)[1]")
-	public WebElement CustomerListSearch ;
+	/*
+	 * @AndroidFindBy(xpath="//android.widget.Button[@text='Add New']") public
+	 * WebElement AddNew ;
+	 * 
+	 * 
+	 * @AndroidFindBy(xpath="//android.widget.Button[@text='Close']") public
+	 * WebElement Close ;
+	 * 
+	 * @AndroidFindBy(xpath="//android.widget.Button[@text='Remove']") public
+	 * WebElement Remove ;
+	 * 
+	 * @AndroidFindBy(xpath="(//android.view.View)[14]") // 17 - add seat(+) 15 not
+	 * works 22- expanded all - not works 14 finally - plain orderscreen public
+	 * WebElement CustomerNameDisplay ;
+	 * 
+	 * @AndroidFindBy(xpath="(//android.widget.EditText)[1]") public WebElement
+	 * CustomerListSearch ;
+	 * 
+	 */
 	
 	
 	
@@ -39,35 +43,21 @@ public class CustomerProfileScreen {
 	@AndroidFindBy(xpath="(//android.widget.Button)[1]")
 	public WebElement CancelCustomerProfileScreen ;
 	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-27']")                            // ******
+	@AndroidFindBy(xpath="(//android.widget.EditText)[1]")                            // ******
 	public WebElement CustomerProfileScreenSearch ;
 	
+	@AndroidFindBy(xpath="(//android.widget.EditText)[2]")                            // ******
+	public WebElement FirstNameNew ;
 	
-	@AndroidFindBy(xpath="//android.view.View[@resource-id='mat-option-65']")
-	public WebElement Searchone ;
-	
-	@AndroidFindBy(xpath="//android.view.View[@resource-id='mat-option-66']")
-	public WebElement Searchtwo ;
-	
-	@AndroidFindBy(xpath="//android.view.View[@resource-id='mat-option-67']")
-	public WebElement Searchthree ;
-	
-	@AndroidFindBy(xpath="//android.view.View[@resource-id='mat-option-68']")
-	public WebElement Searchfour ;
-	
-	@AndroidFindBy(xpath="//android.view.View[@resource-id='mat-option-69']")
-	public WebElement Searchfive ;
-	
-	
-	
-	
-
-	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-28']")
-	public WebElement FirstName ;
-	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-29']")
+	@AndroidFindBy(xpath="(//android.widget.EditText)[3]")                            // ******
 	public WebElement LastName ;
+	
+	
+	
+	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='firstNameInputBox']")
+	public WebElement FirstNameGiven ;
+	
+	
 	
 	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-30']")
 	public WebElement Customeridentificationnumber ;

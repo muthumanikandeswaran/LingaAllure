@@ -87,4 +87,21 @@ public class TableLayoutPage {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='T6']")
 	public WebElement Table6 ;
 	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T16']")
+	public WebElement Table16 ;
+	
+	//@AndroidFindBy(xpath="(//android.view.View)[11]")      //14
+	//public WebElement fourthcheck ;
+	
+	@AndroidFindBy(xpath="//android.view.View[@bounds='[591,116][730,242]']")
+	public WebElement fourthcheck ;
+	
+	
+	
+	//@AndroidFindBy(xpath="(//android.view.View)[16]")    //19
+	//public WebElement ninetheenthcheck ;
+	
+	@AndroidFindBy(xpath="//android.view.View[@text='QSR ']")
+	public WebElement QSRr ;
+	
 }

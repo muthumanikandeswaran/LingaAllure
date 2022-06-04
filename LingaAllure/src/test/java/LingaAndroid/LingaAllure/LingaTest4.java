@@ -73,49 +73,6 @@ public class LingaTest4 extends LingaBase {
 		dp.PHONETOGOService.click();
 		dp.munch.click();
 		dp.Finish.click();
-		
-		
-
-
-
-
-
-
-
-
-		//int d = dr.findElementsByClassName("android.view.View").size();   //   orderscreen   78
-		//System.out.println(d);
-
-
-		//DashboardPage dp = new DashboardPage(dr);
-		//dp.CustomerAdd.click();
-		//dp.CustomerListsearch.sendKeys("shri");
-		//dp.CustomerNameDisplay.click();
-		//dp.EnterNameWalkInCustomer.sendKeys("Meenatchi");
-		//dp.Ok.click();
-		//dp.CustomerNameDisplay.click();
-
-		//dp.Close.click();
-		//dp.AddSeats.click();
-		//dp.SeatsDisplayDropdownButton.click();
-		//Thread.sleep(3000);
-		//dp.SeatsDisplayDropdownButton.click();
-		//int dd = dr.findElementsByClassName("android.view.View").size();   //   order screen after a change - small    80
-		//System.out.println(dd);
-		//Thread.sleep(3000);
-		//int ddd = dr.findElementsByClassName("android.widget.Spinner").size();   //   orderscreen    3
-		//System.out.println(ddd);
-
-		//String st = dp.CheckNumber.getText();
-		//System.out.println(st);
-
-		//dp.ServiceTypesDropdown.click();
-
-		//dp.FirstSeat.click();
-		//dp.TableSelection.click();
-
-		//dp.CategoryDropdown.click();
-		//dp.CategoryDropdown.click();
 
 
 	}

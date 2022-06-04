@@ -35,7 +35,7 @@ public class LingaBase {
 		
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
-
+		                                                            // caps.setCapability("udid", "ND4C504E2205D0164");  ALLURE
 		String device = (String) prop.get("device");
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		
@@ -43,7 +43,7 @@ public class LingaBase {
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
 
 		AndroidDriver<AndroidElement> dr = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
-		dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		
 		
 		

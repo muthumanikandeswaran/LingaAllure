@@ -33,6 +33,7 @@ public class LingaTest3 extends LingaBase {
 
 		//AndroidDriver<AndroidElement> dr = capabilities("apprelease");
 
+		
 
 
 		DesiredCapabilities caps = new DesiredCapabilities();

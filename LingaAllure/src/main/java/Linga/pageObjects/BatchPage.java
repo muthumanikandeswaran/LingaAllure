@@ -26,10 +26,10 @@ public class BatchPage {
 	
 	
 	
-	@AndroidFindBy(xpath="//android.widget.Spinner[@resource-id='mat-select-4']")                            // ******                                    
+	@AndroidFindBy(xpath="(//android.widget.Spinner)[1]")                            
 	public WebElement DeviceSelection ;
 	
-	@AndroidFindBy(xpath="//android.widget.Spinner[@resource-id='mat-select-6']")                                          
+	@AndroidFindBy(xpath="(//android.widget.Spinner)[2]")                                          
 	public WebElement UserSelection ;
 	
 	
@@ -41,7 +41,7 @@ public class BatchPage {
 	
 	
 	
-	@AndroidFindBy(xpath="//(android.widget.EditText)[1]")
+	@AndroidFindBy(xpath="(//android.widget.EditText)[1]")
 	public WebElement Search ;
 	
 	
@@ -55,5 +55,9 @@ public class BatchPage {
 	@AndroidFindBy(xpath="//android.widget.Button[@text=' Print']")
 	public WebElement Print ;
 	
+	@AndroidFindBy(xpath="//android.view.View[@text='Gift Card']")
+	public WebElement GiftCardDevice ;
 	
+	@AndroidFindBy(xpath="//android.view.View[@text='shri admin 1234']")
+	public WebElement ShriUser ;
 }

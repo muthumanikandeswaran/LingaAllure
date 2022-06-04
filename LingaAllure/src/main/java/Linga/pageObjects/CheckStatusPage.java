@@ -18,6 +18,7 @@ public class CheckStatusPage {
 	}
 	
 	
+	
 
 	//@AndroidFindBy(xpath="(//android.view.View)[9]")
 	//public WebElement Options ;
@@ -59,7 +60,7 @@ public class CheckStatusPage {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Phone Order']")
 	public WebElement PhoneOrder ;
 	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-1']")                                          
+	@AndroidFindBy(xpath="(//android.widget.EditText)[1]")                                          
 	public WebElement CheckSearch ;
 	
 	//@AndroidFindBy(id="mat-input-1")
