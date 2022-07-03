@@ -100,7 +100,7 @@ public class DashboardPage {
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Check']")
 	public WebElement CheckText ;
 	
-	@AndroidFindBy(xpath="//android.view.View[@bounds='[85,154][155,180]']")          //**  
+	@AndroidFindBy(xpath="(//android.view.View)[27]")         
 	public WebElement CheckNumber ;
 	
 	@AndroidFindBy(xpath="(//android.widget.Spinner)[2]")                   

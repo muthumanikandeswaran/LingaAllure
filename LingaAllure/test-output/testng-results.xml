@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44970" started-at="2022-06-04T17:49:27 IST" finished-at="2022-06-04T17:50:12 IST">
+  <suite name="Default suite" duration-ms="7902" started-at="2022-07-03T16:21:59 IST" finished-at="2022-07-03T16:22:07 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44970" started-at="2022-06-04T17:49:27 IST" finished-at="2022-06-04T17:50:12 IST">
-      <class name="LingaAndroid.LingaAllure.RandomTest">
-        <test-method status="PASS" signature="tryOne()[pri:0, instance:LingaAndroid.LingaAllure.RandomTest@8e24743]" name="tryOne" duration-ms="44935" started-at="2022-06-04T17:49:28 IST" finished-at="2022-06-04T17:50:12 IST">
+    <test name="Default test" duration-ms="7902" started-at="2022-07-03T16:21:59 IST" finished-at="2022-07-03T16:22:07 IST">
+      <class name="LingaRos.LingaPos.TestCaseOne">
+        <test-method status="PASS" signature="PlaceOrder()[pri:0, instance:LingaRos.LingaPos.TestCaseOne@8e24743]" name="PlaceOrder" duration-ms="7863" started-at="2022-07-03T16:21:59 IST" finished-at="2022-07-03T16:22:07 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tryOne -->
-      </class> <!-- LingaAndroid.LingaAllure.RandomTest -->
+        </test-method> <!-- PlaceOrder -->
+      </class> <!-- LingaRos.LingaPos.TestCaseOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
