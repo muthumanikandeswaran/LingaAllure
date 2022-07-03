@@ -16,6 +16,11 @@ public class OrderType {
 		PageFactory.initElements(new AppiumFieldDecorator(dr), this);
 	}
 	
+	
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Order Type']")
+	public WebElement OrderTypeHeadingText ;
+	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='FORHERE']")
 	public WebElement FORHERE ;
 	
@@ -31,10 +36,10 @@ public class OrderType {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Phone DELIVERY']")
 	public WebElement PhoneDELIVERY ;
 	
-	@AndroidFindBy(xpath="//android.widget.RadioButton[@resource-id='mat-radio-11-input']")                             // ******
+	@AndroidFindBy(xpath="//android.widget.RadioButton[@text='Now']")                             
 	public WebElement Now  ;
 	
-	@AndroidFindBy(xpath="//android.widget.RadioButton[@resource-id='mat-radio-12-input']")
+	@AndroidFindBy(xpath="//android.widget.RadioButton[@text='Later']")
 	public WebElement  Later ;
 	
 	//@AndroidFindBy(id="mat-radio-2-input")
