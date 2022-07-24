@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
+import Linga.pageObjects.DashboardPage;
 import LingaAndroid.LingaAllure.LingaBase;
 import LingaAndroid.LingaAllure.Utilities;
 import io.appium.java_client.android.AndroidDriver;
@@ -19,7 +20,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class AndroidInstall extends LingaBase {
 
 	@Test
-	public void installAndroidAlone() throws InterruptedException, IOException {
+	public void InstallAndroidAlone() throws InterruptedException, IOException {
 
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\global.properties");       
@@ -41,7 +42,10 @@ public class AndroidInstall extends LingaBase {
 
 		AndroidDriver<AndroidElement> dr = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
 		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);		
-
+        DashboardPage dp = new DashboardPage(dr);
+        dp.AllowSource.click();
+        dp.AllowSourceBack.click();
+        dp.ALLOW.click();
 		Utilities u = new Utilities(dr);
 		u.storeLogin("cassanobro@mail.com","bro123");
 		u.defaultPin();
