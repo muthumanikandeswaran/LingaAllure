@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import Linga.pageObjects.DashboardPage;
+import Linga.pageObjects.OrderType;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -37,6 +39,8 @@ public class LingaBase {
 		AndroidDriver<AndroidElement> dr = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
 		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		
+		
+		
 		return dr;	
 	}
 
@@ -60,11 +64,18 @@ public class LingaBase {
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
 
 		AndroidDriver<AndroidElement> dr = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
-		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);		
+		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);	
+		
+		DashboardPage dp = new DashboardPage(dr);
+        dp.AllowSource.click();
+        dp.AllowSourceBack.click();
+        dp.ALLOW.click();
 
 		Utilities u = new Utilities(dr);
 		u.storeLogin("cassanobro@mail.com","bro123");
 		u.defaultPin();
+		OrderType otp = new OrderType(dr);
+		otp.Cancel.click();
 		return dr;
 
 	}

@@ -41,9 +41,7 @@ public class RandomTest extends LingaBase {
 	@Test
 	public void tryOne() throws InterruptedException, IOException {
 
-		//AndroidDriver<AndroidElement> dr = capabilities("apprelease");
-
-
+		
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("udid", "ND4C504E2205D0164");
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
@@ -51,7 +49,7 @@ public class RandomTest extends LingaBase {
 		AndroidDriver<AndroidElement> dr = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
 		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 
-		dr.startActivity(new Activity("com.benseron.pos", "com.benseron.pos.MainActivity"));
+		//dr.startActivity(new Activity("com.benseron.pos", "com.benseron.pos.MainActivity"));
 
 
 		AddCustomerPage acp = new AddCustomerPage(dr);
@@ -77,33 +75,46 @@ public class RandomTest extends LingaBase {
 
 
 		//u.storeLogin("shri1@mail.com","admin123");
-		Thread.sleep(6000);
-		u.defaultPin();
-		otp.Cancel.click();
-		Thread.sleep(2000);
-
+		dp.Cancel.click();
 		
-		String CheckNo = dp.CheckNumber.getText();
-		System.out.println("check No is :"+CheckNo);
 		
-		//CHECK NUMBER GETTING CODE+++++++
+		u.setConnectionToOFF();
 		
-		//String CheckNo = dr.findElement(By.xpath("//*[@text='Check']/../android.widget.TextView[2]")).getText();
-	    //System.out.println("Check No is :"+CheckNo);
-				
-		//dr.findElement(By.xpath("//*[@text='"+CheckNo+"']/..")).click();
+		Thread.sleep(9000);
+		u.setConnectionToON();
 		
 		
 		
 		
 		
+		/*
+		 * u.defaultPin(); otp.Cancel.click(); Thread.sleep(2000);
+		 * 
+		 * 
+		 * String CheckNo = dp.CheckNumber.getText();
+		 * System.out.println("check No is :"+CheckNo);
+		 * 
+		 * //CHECK NUMBER GETTING CODE+++++++
+		 * 
+		 * //String CheckNo =
+		 * dr.findElement(By.xpath("//*[@text='Check']/../android.widget.TextView[2]")).
+		 * getText(); //System.out.println("Check No is :"+CheckNo);
+		 * 
+		 * //dr.findElement(By.xpath("//*[@text='"+CheckNo+"']/..")).click();
+		 * 
+		 * 
+		 * dr.findElement(By.xpath("//*[@text='Toasted Ravioli']")).click();
+		 * dp.Done.click();
+		 * dr.findElement(By.xpath("//*[@text='Tater Babies']")).click();
+		 * dp.Payment.click(); dp.CashPay.click(); dp.Submit.click();
+		 * otp.Cancel.click();
+		 */
 		
 		
 		
 		
 		
-		
-		dp.CustomerAdd.click();
+		//dp.CustomerAdd.click();
 		/*
 		 * acp.ByName.click();
 		 *  acp.ByPhone.click();
@@ -116,15 +127,15 @@ public class RandomTest extends LingaBase {
 		 * Thread.sleep(2000);
 		 *  dp.CustomerAdd.click();
 		 */
-		acp.ByName.click();
-		acp.SearchCustomer.click();
-		acp.SearchCustomer.sendKeys("Rambo");
-		Thread.sleep(2000);
-		acp.NameResultOne.click();
-		Thread.sleep(2000);
-		dp.CustomerNameDisplay.click();
-		dr.hideKeyboard();
-		cpsp.SAVECUSTOMER.click();
+		//acp.ByName.click();
+		//acp.SearchCustomer.click();
+		//acp.SearchCustomer.sendKeys("Rambo");
+		//Thread.sleep(2000);
+		//acp.NameResultOne.click();
+		//Thread.sleep(2000);
+		//dp.CustomerNameDisplay.click();
+		//dr.hideKeyboard();
+		//cpsp.SAVECUSTOMER.click();
 
 
 

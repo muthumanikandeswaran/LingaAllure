@@ -83,12 +83,49 @@ public class TableLayoutPage {
 	public WebElement Continue ;
 	
 	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T1']")
+	public WebElement Table1 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T2']")
+	public WebElement Table2 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T3']")
+	public WebElement Table3 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T4']")
+	public WebElement Table4 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T5']")
+	public WebElement Table5 ;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='T6']")
 	public WebElement Table6 ;
 	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T7']")
+	public WebElement Table7 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T8']")
+	public WebElement Table8 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T9']")
+	public WebElement Table9 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T10']")
+	public WebElement Table10 ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='T11']")
+	public WebElement Table11 ;
+	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='T16']")
 	public WebElement Table16 ;
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//@AndroidFindBy(xpath="(//android.view.View)[11]")      //14
 	//public WebElement fourthcheck ;
@@ -101,7 +138,7 @@ public class TableLayoutPage {
 	//@AndroidFindBy(xpath="(//android.view.View)[16]")    //19
 	//public WebElement ninetheenthcheck ;
 	
-	@AndroidFindBy(xpath="//android.view.View[@text='QSR ']")
-	public WebElement QSRr ;
+	@AndroidFindBy(xpath="//android.widget.Button[@text='QSR']")
+	public WebElement QSR ;
 	
 }

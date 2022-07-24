@@ -18,6 +18,15 @@ public class DashboardPage {
 	}
 	
 
+	@AndroidFindBy(xpath="//android.widget.Switch[@resource-id='android:id/switch_widget']")
+	public WebElement AllowSource ;
+	
+	@AndroidFindBy(xpath="(//android.widget.ImageButton)[1]")
+	public WebElement AllowSourceBack ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")
+	public WebElement ALLOW ;
+	
 	@AndroidFindBy(xpath="(//android.widget.Button)[1]")
 	public WebElement OperationList ;
 	
@@ -36,7 +45,11 @@ public class DashboardPage {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Ok']")
 	public WebElement Ok ;
 	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Yes']")
+	public WebElement Yes ;
 	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='No']")
+	public WebElement No ;
 	
 	@AndroidFindBy(xpath="(//android.widget.Button)[3]")
 	public WebElement CustomerAdd ;
@@ -100,7 +113,7 @@ public class DashboardPage {
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Check']")
 	public WebElement CheckText ;
 	
-	@AndroidFindBy(xpath="(//android.view.View)[27]")         
+	@AndroidFindBy(xpath="(//android.view.View)[26]")         
 	public WebElement CheckNumber ;
 	
 	@AndroidFindBy(xpath="(//android.widget.Spinner)[2]")                   
@@ -315,8 +328,11 @@ public class DashboardPage {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='INR']")
 	public WebElement INRPay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='Cash']")
+	@AndroidFindBy(xpath="//android.widget.Button[@bounds='[457,178][624,231]']")
 	public WebElement CashPay ;
+	
+	//@AndroidFindBy(xpath="//android.widget.Button[@text='Cash']")[457,178][624,231]
+	//public WebElement CashPay ;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Gift Card']")
 	public WebElement GiftCardPay ;
@@ -327,25 +343,25 @@ public class DashboardPage {
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Exit']")
 	public WebElement OthersPay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='HAPay']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='HA Payment']")
 	public WebElement HAPay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='MPPGAuthPay']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='MPPG Auth']")
 	public WebElement MPPGAuthPay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='MPPGSalePay']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='MPPG Sale']")
 	public WebElement MPPGSalePay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='VexenPay']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Vexen']")
 	public WebElement VexenPay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='CloverAuthPay']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Clover Auth']")
 	public WebElement CloverAuthPay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='CloverSalePay']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Clover Sale']")
 	public WebElement CloverSalePay ;
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@text='PaxPayment']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='SPPax']")
 	public WebElement PaxPaymentPay ;
 	
 	
@@ -379,19 +395,37 @@ public class DashboardPage {
 	public WebElement  Tip ;
 	
 	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='cardInput']")                              // ******
-	public WebElement cardInput ;
+	public WebElement cardNumber ;
 	
 	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='cardName']")
-	public WebElement cardName ;
+	public WebElement cardHolderName ;
 	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-43']")
+	
+	
+	
+	@AndroidFindBy(xpath="(//android.widget.EditText)[4]")
 	public WebElement ExpiresOn ;
 	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-44']")
+	@AndroidFindBy(xpath="(//android.widget.EditText)[5]")
 	public WebElement CVV ;
 	
-	@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-45']")
+	@AndroidFindBy(xpath="(//android.widget.EditText)[6]")
 	public WebElement ZipCode ;
+	
+	
+	
+	//@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-43']")
+	//public WebElement ExpiresOn ;
+	
+	//@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-44']")
+	//public WebElement CVV ;
+	
+	//@AndroidFindBy(xpath="//android.widget.EditText[@resource-id='mat-input-45']")
+	//public WebElement ZipCode ;
+	
+	
+	
+	
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Clear']")
 	public WebElement Clear ;
